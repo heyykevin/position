@@ -1,0 +1,93 @@
+*{margin: 0; padding: 0; box-sizing: border-box;;}
+
+header{
+  text-align: center;
+  
+
+}
+header h1{
+  padding: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(104, 104, 104);
+}
+
+nav ul {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10vw;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);              
+  text-decoration: none;     
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: .3rem .5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display:inline-block;
+}
+
+body{
+     
+     background-image:url(.//img/pexels-pixabay-60504.jpg) ;
+     color: antiquewhite  ;
+}
+section.cards{
+  display: flex;
+  row-gap: 5rem;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
+article.card{
+  width:20rem;
+  padding: 1rem;
+  background-color: rgb(255, 141, 141);
+  color: black;
+}
+
+.card:first-child{
+  background-color: blueviolet;
+  position:relative ;
+}
+.card:first-child button{
+    background-color: rgba(0, 0, 0, 0.1);
+    position:absolute;
+    top: 0rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: scale .1s;
+}
+.card:first-child button:active{
+  scale: .8;
+  background-color: rgb(144, 0, 255,.2);
+}
+img{
+  width: 100%;
+}
+.card:nth-child(2) #circle{
+  border-radius: 50%;
+  width: 25%;
+}
+.card:nth-child(2) img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.8;
+    
+}
+.card:nth-child(2){
+  position: relative;
+}
